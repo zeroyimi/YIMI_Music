@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <audio
+      preload="auto"
+      src="http://music.163.com/song/media/outer/url?id=1953125353.mp3"
+      style="display: none;"
+      controls
+    ></audio>
+    <div class="box">
+      <div class="box-left">
+        <div id="nav">
+          <input type="search" value="小幸运" id="searchText" />
+          <button id="search">搜索</button>
+        </div>
+        <div class="menu">
+          <ul>
+            <li id="hot">热门歌曲</li>
+            <li id="menu">我的收藏</li>
+          </ul>
+        </div>
+        <hr />
+        <div class="content">
+          <ul>
+            <li>歌曲</li>
+            <li>歌手</li>
+            <li>专辑</li>
+            <li>收藏</li>
+          </ul>
+          <ul id="list">
+            <!-- 自动添加歌曲信息 -->
+          </ul>
+        </div>
+      </div>
+      <!-- 点击右面展开部分，占据屏幕百分百，左侧隐藏 -->
+      <div class="box-right">
+        <img src="http://p4.music.126.net/SrQOymubpzWHHL2XC97Ylw==/109951167508113796.jpg" alt="" class="bgimg" />
+        <div class="head">
+          <img id="hImg" src="http://p1.music.126.net/SrQOymubpzWHHL2XC97Ylw==/109951167508113796.jpg" alt="" />
+        </div>
+        <!-- <audio id="audio" src="./music/王源 - 一些悲伤又美好的事.mp3"></audio> -->
+        <div id="word">
+          <ul id="text"></ul>
+        </div>
+      </div>
+      <div class="box-bottom">
+        <div id="mdiv">
+          <div class="mmode" id="mmode">
+            <div class="mmove"></div>
+          </div>
+          <span id="sImg"> </span>
+        </div>
+        <div class="lhImg">
+          <div id="Img"><img src="./img/head/1.jpeg" /></div>
+          <div id="sign">
+            <span id="title">你的名字是世界瞒着我最大的事情</span>
+            <span id="singer">王源</span>
+          </div>
+        </div>
+        <div class="controls">
+          <ul>
+            <!-- 循环播放 三个组件组装在一起-->
+            <li id="cycle">
+              <img src="./img/icon/循环播放.svg" alt="" title="循环播放" />
+            </li>
+            <!-- 顺序播放 -->
+            <!-- <li id="order"></li> -->
+            <!-- 随机播放 -->
+            <!-- <li id="random"></li>  -->
+            <!-- 上一首 -->
+            <li id="prev">
+              <img src="./img/icon/24gf-previous.svg" alt="" />
+            </li>
+            <!-- 播放 -->
+            <li id="play">
+              <img src="./img/icon/24gf-playCircle.svg" title="暂停" />
+            </li>
+            <!-- 下一首 -->
+            <li id="next">
+              <img src="./img/icon/24gf-next.svg" alt="" />
+            </li>
+            <!-- 音量 -->
+            <li id="voice">
+              <img src="./img/icon/24gf-volumeMiddle.svg" alt="" />
+              <div id="cdiv">
+                <div class="mode" id="mode">
+                  <div class="move"></div>
+                </div>
+                <span></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="time">
+          <div id="time">00:00/03:12</div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/ajax.js"></script>
+    <!-- <script src="./js/main.js"></script> -->
+  </body>
+</html>
